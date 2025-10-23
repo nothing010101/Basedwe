@@ -20,7 +20,7 @@
       position: relative;
     }
 
-    /* Awan di background */
+    /* Background awan */
     .clouds {
       position: absolute;
       top: 0;
@@ -57,7 +57,7 @@
       max-width: 400px;
     }
 
-    /* Gambar worm */
+    /* Worm image */
     .worm {
       width: 120px;
       animation: float 3s ease-in-out infinite;
@@ -89,6 +89,7 @@
       font-size: 1rem;
       cursor: pointer;
       transition: background 0.3s;
+      margin: 5px;
     }
 
     button:hover {
@@ -100,6 +101,26 @@
       color: #666;
       margin-top: 10px;
     }
+
+    /* Social icons */
+    .socials {
+      margin-top: 25px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .socials a img {
+      width: 28px;
+      height: 28px;
+      opacity: 0.8;
+      transition: transform 0.3s, opacity 0.3s;
+    }
+
+    .socials a img:hover {
+      transform: scale(1.2);
+      opacity: 1;
+    }
   </style>
 </head>
 <body>
@@ -109,8 +130,21 @@
     <img src="https://github.com/nothing010101/Basedwe/blob/main/download.avif?raw=true" class="worm" alt="WERM" />
     <h1>Join the WERM waitlist</h1>
     <p>Connect your wallet for priority access when we go live</p>
-    <button>Connect Base wallet</button>
+    <button onclick="window.open('#', '_blank')">Connect Base wallet</button>
+    <button onclick="window.open('#', '_blank')">BUY NOW</button>
     <div class="users">220 users registered</div>
+
+    <div class="socials">
+      <a href="#" target="_blank">
+        <img src="https://github.com/nothing010101/Basedwe/blob/main/dc.png?raw=true" alt="Discord" />
+      </a>
+      <a href="#" target="_blank">
+        <img src="https://github.com/nothing010101/Basedwe/blob/main/x.jpg?raw=true" alt="X" />
+      </a>
+      <a href="#" target="_blank">
+        <img src="https://github.com/nothing010101/Basedwe/blob/main/farcaster.svg?raw=true" alt="Farcaster" />
+      </a>
+    </div>
   </div>
 </body>
 </html>
